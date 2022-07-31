@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>slider</title>
+	<link rel="stylesheet" href="./estilo.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="./img/KOROVA_OR_FLOWER_WE_OG_JACK_HERER_MACRO.png" alt=""></div>
+			<div class="swiper-slide"><img src="./img/KOROVA_OR_FLOWER_WE_OG_JACK_HERER_MACRO.png" alt=""></div>
+			<div class="swiper-slide"><img src="./img/KOROVA_OR_FLOWER_WE_OG_JACK_HERER_MACRO.png" alt=""></div>
+			<div class="swiper-slide"><img src="./img/KOROVA_OR_FLOWER_WE_OG_JACK_HERER_MACRO.png" alt=""></div>
+			<div class="swiper-slide"><img src="./img/KOROVA_OR_FLOWER_WE_OG_JACK_HERER_MACRO.png" alt=""></div>
+			<div class="swiper-slide"><img src="./img/KOROVA_OR_FLOWER_WE_OG_JACK_HERER_MACRO.png" alt=""></div>
+=
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			slidesPerGroup: 3,
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
+</body>
+
+</html>
